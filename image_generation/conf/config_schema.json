@@ -1,0 +1,94 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string"
+            },
+            "classe": {
+                "type": "integer"
+            },
+            "image_width": {
+                "type": "integer"
+            },
+            "image_height": {
+                "type": "integer"
+            },
+            "render_percentage": {
+                "type": "integer"
+            },
+            "samples_number": {
+                "type": "integer"
+            },
+            "object_path": {
+                "type": "string"
+            },
+            "render_number": {
+                "type": "integer"
+            },
+            "radiusVariation": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "integer"
+                    },
+                    "max": {
+                        "type": "integer"
+                    }
+                },
+                "required": ["min", "max"]
+            },
+            "angleBetaVariation": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "integer"
+                    },
+                    "max": {
+                        "type": "integer"
+                    }
+                },
+                "required": ["min", "max"]
+            },
+            "angleTetaVariation": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "integer"
+                    },
+                    "max": {
+                        "type": "integer"
+                    }
+                },
+                "required": ["min", "max"]
+            },
+            "angleRohVariation": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "integer"
+                    },
+                    "max": {
+                        "type": "integer"
+                    }
+                },
+                "required": ["min", "max"]
+            },
+            "heightVariation": {
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "integer"
+                    },
+                    "max": {
+                        "type": "integer"
+                    }
+                },
+                "required": ["min", "max"]
+            }
+        },
+        "required": ["id", "classe", "image_width", "image_height", "render_percentage", "samples_number", "object_path", "render_number", "radiusVariation", "angleBetaVariation", "angleTetaVariation", "angleRohVariation", "heightVariation"]
+    }
+}

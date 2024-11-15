@@ -1,0 +1,15 @@
+
+path: /mnt/shared_disk/BlenderGeneration/result/all_objects/
+train: dataset  
+val: dataset  
+
+# Classes
+names:
+  0: zone_1_terrain_sport
+  1: zone_2_taxi
+  2: zone_3_planete_science
+  3: zone_4_jeux
+  4: zone_5_decollage_atterissage
+  5: blue_object
+  6: yellow_object
+  7: red_object
